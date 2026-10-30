@@ -1,0 +1,7 @@
+interface:
+  display_name: "卡跳跳 Memo-CardLink"
+  short_description: "通过官方 API 创建、修复并核验墨墨记忆卡单向跳转与双向链接"
+  default_prompt: "请使用 $memo-cardlink 为指定的现有墨墨记忆卡建立单向跳转或双向链接，并核验修改结果。"
+
+policy:
+  allow_implicit_invocation: true
