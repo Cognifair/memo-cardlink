@@ -2,6 +2,14 @@
 
 遵循语义化版本：修 bug → patch，新增能力 → minor，改变契约 → major。
 
+## v1.0.1 — 2026-10-31
+
+影响面：memo-cardlink(SKILL.md, scripts/secret_resolver.py, references/credentials.md, version.json)
+
+### 修复
+
+- 凭证读取不再只依赖进程环境变量：统一经 `secret_resolver.py` 读取进程环境、Windows 用户级环境、`%LOCALAPPDATA%\MaimemoSecrets` 与工作区 `.memo-secrets`，支持工作区沙箱。
+
 ## v1.0.0 — 2026-10-30
 
 影响面：memo-cardlink(SKILL.md, README.md, CHANGELOG.md, version.json, references/workflow.md) / 6 个 Memo 仓库(README.md, references/satellites.md)

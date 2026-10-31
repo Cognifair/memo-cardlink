@@ -2,10 +2,10 @@
 name: memo-cardlink
 description: 卡跳跳 Memo-CardLink（原 Memo-Link），通过官方 MaiMemo OpenAPI 为现有墨墨记忆卡创建、修复和核验单向跳转或双向链接。用于目录卡导航、相关卡互链和 Card 引用审计；不负责仅打开卡片、移动卡片或新建卡片正文。
 metadata:
-  version: "1.0.0"
+  version: "1.0.1"
 ---
 
-# 卡跳跳 Memo-CardLink v1.0.0
+# 卡跳跳 Memo-CardLink v1.0.1
 
 调用名：`$memo-cardlink`。原名 Memo-Link；用户沿用旧名称时按本技能处理，无需另建双向链接技能。旧 `$memo-link` 不再是独立安装入口。
 
@@ -26,6 +26,7 @@ metadata:
 ## 能力与资料
 
 - API 操作前确认当前官方 MaiMemo OpenAPI 的认证、分页与更新规则；本技能自带 [references/workflow.md](references/workflow.md)。若本地有 `memo-cardest` 的 API 参考可对照，但缺失不阻断；找不到当前权威接口资料时暂停并说明，不猜测接口或自动切换私有 Web API。
+- 读取 `MAIMEMO_TOKEN` 时用 `scripts/secret_resolver.py`：进程环境 → Windows 用户级环境变量 → `%LOCALAPPDATA%\MaimemoSecrets` → 工作区 `.memo-secrets`；工作区沙箱说明见 [references/credentials.md](references/credentials.md)。
 - 规划、写入、修复或审计前读取 [references/workflow.md](references/workflow.md)。
 - 客户端已登录且浏览器工具可用时，按工具文档检查渲染和点击。若当前环境要求 computer-use 技能，先读取该技能；不依赖已不存在的浏览器技能名称。
 

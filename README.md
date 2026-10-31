@@ -1,4 +1,4 @@
-# 卡跳跳 Memo-CardLink v1.0.0
+# 卡跳跳 Memo-CardLink v1.0.1
 
 > 🌐 [墨卡大师 · 专业制卡工作流](https://moka-master.app.workbuddy.host/?sharecode=ZYHGDS4GEB)
 
