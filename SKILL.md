@@ -2,10 +2,10 @@
 name: memo-cardlink
 description: 卡跳跳 Memo-CardLink（原 Memo-Link），通过官方 MaiMemo OpenAPI 为现有墨墨记忆卡创建、修复和核验单向跳转或双向链接。用于目录卡导航、相关卡互链和 Card 引用审计；不负责仅打开卡片、移动卡片或新建卡片正文。
 metadata:
-  version: "1.0.1"
+  version: "1.0.2"
 ---
 
-# 卡跳跳 Memo-CardLink v1.0.1
+# 卡跳跳 Memo-CardLink v1.0.2
 
 调用名：`$memo-cardlink`。原名 Memo-Link；用户沿用旧名称时按本技能处理，无需另建双向链接技能。旧 `$memo-link` 不再是独立安装入口。
 

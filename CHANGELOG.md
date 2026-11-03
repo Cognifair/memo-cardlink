@@ -2,6 +2,14 @@
 
 遵循语义化版本：修 bug → patch，新增能力 → minor，改变契约 → major。
 
+## v1.0.2 — 2026-11-03
+
+影响面：memo-cardlink(README.md, references/satellites.md)
+
+### 变更
+
+- MEMO-CARDLINK: 系列清单更新为墨兰迪 Memo-Canvas。
+
 ## v1.0.1 — 2026-10-31
 
 影响面：memo-cardlink(SKILL.md, scripts/secret_resolver.py, references/credentials.md, version.json)
