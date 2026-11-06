@@ -2,14 +2,22 @@
 name: memo-cardlink
 description: 卡跳跳 Memo-CardLink（原 Memo-Link），通过官方 MaiMemo OpenAPI 为现有墨墨记忆卡创建、修复和核验单向跳转或双向链接。用于目录卡导航、相关卡互链和 Card 引用审计；不负责仅打开卡片、移动卡片或新建卡片正文。
 metadata:
-  version: "1.0.3"
+  version: "1.0.4"
 ---
 
-# 卡跳跳 Memo-CardLink v1.0.3
+# 卡跳跳 Memo-CardLink v1.0.4
 
 调用名：`$memo-cardlink`。原名 Memo-Link；用户沿用旧名称时按本技能处理，无需另建双向链接技能。旧 `$memo-link` 不再是独立安装入口。
 
 在现有 Markji 卡片之间建立幂等、可核验的 Card 引用，保留无关正文与格式。
+
+## 链接格式速查
+
+- **正文跳转引用（卡跳跳写入）**：`[Card#ID/<目标 root_id>#显示文字]`。单向和双向语法相同，区别只在修改哪张卡；正文不能用 `card_id` 代替 `root_id`。
+- **网页卡片定位（不是卡跳跳产出）**：`https://www.markji.com/deck/editor/<牌组网页 ID>?cardId=<卡片网页 ID>`。这是网页深链，使用网页 ID，不是 `mkjd_` API 牌组 ID 或 `root_id`。
+- **牌组入口**：`https://www.markji.com/deck/<牌组网页 ID>`，不是单卡跳转。
+
+详细对照、常见错误和交付边界见 [references/card-link-formats.md](references/card-link-formats.md)。不要把网页深链当 Card 语法，也不要把 Card 引用说成可分享 URL。
 
 ## 选择链接模式
 

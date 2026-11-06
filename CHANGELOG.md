@@ -2,6 +2,20 @@
 
 遵循语义化版本：修 bug → patch，新增能力 → minor，改变契约 → major。
 
+## v1.0.4 — 2026-11-07
+
+影响面：memo-cardlink(SKILL.md, README.md, CHANGELOG.md, references/card-link-formats.md)
+
+### 新增
+
+- 增加“链接格式速查”：正文跳转 `[Card#ID/<root_id>#显示文字]`、网页定位 `/deck/editor/<deckId>?cardId=<cardId>`、牌组入口 `/deck/<deckId>` 三种格式分开说明。
+- 明确单向和双向的 Card 语法相同，区别只在修改哪张卡；正文必须用目标 `root_id`，网页深链使用网页 ID，两套 ID 不能换算。
+- 补充常见错误：把 `card_id` 当 `root_id`、把网页深链当 Card 语法、把牌组链接当单卡链接。
+
+### 验证
+
+- 格式来自真实会话与用户导出的 1214 条网页卡片链接；未新增自动写入测试。
+
 ## v1.0.3 — 2026-11-04
 
 影响面：memo-cardlink(技能名称、调用示例与系列引用) / memo-ankigo / memo-txt

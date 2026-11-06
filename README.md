@@ -1,4 +1,4 @@
-# 卡跳跳 Memo-CardLink v1.0.3
+# 卡跳跳 Memo-CardLink v1.0.4
 
 > 🌐 [墨卡大师 · 专业制卡工作流](https://moka-master.app.workbuddy.host/?sharecode=ZYHGDS4GEB)
 
@@ -24,6 +24,38 @@
 | 审计/修复 | 按指定方向检查或补缺 | 审计只读；修复只改授权方向 |
 
 只说“加个链接”且给出来源和目标时，默认单向；不会因为旧名 Memo-Link 就自动做成双向。
+
+## 三种“卡片链接”不要混
+
+### 1. 正文跳转引用（卡跳跳写入）
+
+```text
+[Card#ID/<目标 root_id>#显示文字]
+```
+
+单向和双向**语法相同**，只差改哪张卡：
+
+- 单向 A → B：只改 A；
+- 双向 A ↔ B：A、B 各插一条；
+- 正文里必须用目标 `root_id`，不能用 `card_id` 代替。
+
+### 2. 网页定位链接（不是卡跳跳产出）
+
+```text
+https://www.markji.com/deck/editor/<牌组网页 ID>?cardId=<卡片网页 ID>
+```
+
+这是网页端编辑器深链，使用网页 24 位 ID，不是 `mkjd_` API 牌组 ID，也不是 `root_id`。它用于打开/定位卡片，不是可写入正文的 Card 语法。
+
+### 3. 牌组入口
+
+```text
+https://www.markji.com/deck/<牌组网页 ID>
+```
+
+这是整个牌组的入口，不是单卡跳转，也不是分享授权。
+
+详见 [references/card-link-formats.md](references/card-link-formats.md)。
 
 ## 安装
 
