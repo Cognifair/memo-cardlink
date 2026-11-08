@@ -2,6 +2,16 @@
 
 遵循语义化版本：修 bug → patch，新增能力 → minor，改变契约 → major。
 
+## v1.0.5 — 2026-11-08
+
+影响面：memo-cardlink(SKILL.md, README.md, CHANGELOG.md, references/cli-contract.md, scripts/cli.py, scripts/test_cli.py)
+
+### 新增
+
+- 增加稳定 CLI：`scripts/cli.py ref` 生成唯一 Card 引用，`check` 校验格式；不再允许临时手写 `[Card#...]` 或另建拼格式脚本。
+- 增加 CLI 契约文档与 5 项格式测试；只读查询仍用 `scripts/cl_probe.py`。
+- 网页深链与 Card 语法继续分开，避免把 URL 当引用写入正文。
+
 ## v1.0.4 — 2026-11-07
 
 影响面：memo-cardlink(SKILL.md, README.md, CHANGELOG.md, references/card-link-formats.md)

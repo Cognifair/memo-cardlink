@@ -1,4 +1,4 @@
-# 卡跳跳 Memo-CardLink v1.0.4
+# 卡跳跳 Memo-CardLink v1.0.5
 
 > 🌐 [墨卡大师 · 专业制卡工作流](https://moka-master.app.workbuddy.host/?sharecode=ZYHGDS4GEB)
 
@@ -56,6 +56,17 @@ https://www.markji.com/deck/<牌组网页 ID>
 这是整个牌组的入口，不是单卡跳转，也不是分享授权。
 
 详见 [references/card-link-formats.md](references/card-link-formats.md)。
+
+## 稳定 CLI
+
+不再手写 `[Card#...]` 或临时拼格式：
+
+```text
+python -B scripts/cli.py ref --root-id <root_id> --label <文字>
+python -B scripts/cli.py check "<引用>"
+```
+
+只读查询用 `scripts/cl_probe.py`。完整命令与退出码见 [references/cli-contract.md](references/cli-contract.md)。
 
 ## 安装
 
