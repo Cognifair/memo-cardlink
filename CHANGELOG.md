@@ -2,6 +2,16 @@
 
 遵循语义化版本：修 bug → patch，新增能力 → minor，改变契约 → major。
 
+## v1.0.7 — 2026-11-14
+
+影响面：memo-cardlink(SKILL.md, CHANGELOG.md, references/card-link-formats.md)
+
+### 改进
+
+- 绿色小标签模板的分节标题与链接组标签改为由 AI 根据内容生成，不再固定写“考点直击/题目”。
+- 增加填充规则：标题概括主题，标签说明链接用途；内容不确定时用“相关卡片”，不硬贴“考点/真题”。
+- 用户给定标签时按用户标签，不自行改名。
+
 ## v1.0.6 — 2026-11-14
 
 影响面：memo-cardlink(SKILL.md, CHANGELOG.md, references/card-link-formats.md)
