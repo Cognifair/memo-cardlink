@@ -2,6 +2,16 @@
 
 遵循语义化版本：修 bug → patch，新增能力 → minor，改变契约 → major。
 
+## v1.0.6 — 2026-11-14
+
+影响面：memo-cardlink(SKILL.md, CHANGELOG.md, references/card-link-formats.md)
+
+### 文档
+
+- 明确 `[Card#...]` 只负责跳转，没有强制视觉样式。
+- 补充可选的绿色小标签版式：「考点直击 / 题目 + 编号链接」；说明这是 MemoCardest 内容模板，不由 CardLink 自动注入。
+- 已有卡片优先保留原样式，不为了套模板重写整张卡。
+
 ## v1.0.5 — 2026-11-08
 
 影响面：memo-cardlink(SKILL.md, README.md, CHANGELOG.md, references/cli-contract.md, scripts/cli.py, scripts/test_cli.py)
